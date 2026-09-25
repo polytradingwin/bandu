@@ -351,7 +351,7 @@
             observer?.disconnect();
             intersection?.disconnect();
             clearTimeout(scanTimer);
-           
+
             notice('伴读已更新，此页面仍在使用旧版本。刷新页面后即可恢复翻译。', '刷新页面');
             panelButton.onclick = () => location.reload();
             break;
@@ -426,7 +426,7 @@
       observer?.disconnect();
       intersection?.disconnect();
       clearTimeout(scanTimer); scanTimer = null;
-     
+
       translator?.destroy();
       translator = null;
       for (const [element, record] of records) removeRecord(element, record);
