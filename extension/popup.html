@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>伴读</title><link rel="stylesheet" href="ui.css"></head>
+<body class="popup">
+<header><span class="mark">伴</span><div><h1>伴读</h1><p>英文在，中文也在。</p></div><button id="settings" class="text-button">API 设置 ↗</button></header>
+<main>
+<section class="quota-panel" aria-label="翻译设置">
+<div class="quota-heading"><strong>免费 · 开源</strong><span>自带 API</span></div>
+<p id="provider-label">正在读取翻译设置…</p><p>伴读不收费。API 费用由你与服务商结算。</p>
+</section>
+<div class="site"><span>当前网站</span><strong id="site">正在读取…</strong></div>
+<button id="toggle" class="site-toggle" role="switch" aria-checked="false" disabled><span class="toggle-symbol" aria-hidden="true">伴</span><span class="toggle-copy"><strong id="toggle-title">正在连接页面…</strong><small id="toggle-action"></small></span><span class="switch-track" aria-hidden="true"><span></span></span></button>
+<p id="status" role="status" aria-live="polite"></p>
+<label for="layout">文章对照方式</label><select id="layout"><option value="auto">自动 · 宽屏左右，窄屏上下</option><option value="below">始终放在英文下方</option></select>
+<div class="eb-row"><button id="engbetter" class="text-button">连接到 EngBetter ↗</button><button id="eb-disconnect" class="text-button" hidden>断开</button></div>
+<p id="eb-status" role="status" aria-live="polite" hidden></p>
+<footer><a href="https://github.com/polytradingwin/bandu" target="_blank" rel="noreferrer">GitHub ↗</a><button id="help" class="text-button">使用说明 ↗</button></footer>
+</main><script src="providers.js"></script><script src="popup.js"></script></body></html>

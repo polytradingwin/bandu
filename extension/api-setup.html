@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>伴读 · API 设置</title><link rel="stylesheet" href="ui.css"></head>
+<body class="guide settings">
+<header><span class="mark">伴</span><div><h1>用你自己的 API，开始伴读。</h1><p>免费 · 开源 · 无需注册伴读账号</p></div></header>
+<main>
+<div class="note"><strong>伴读不收取软件费或会员费。</strong><p>你需要自己的 API 账户；模型调用费用与额度由服务商决定。ChatGPT / Claude 等聊天会员通常不包含 API 额度。</p></div>
+<form id="api-form">
+<label for="provider">API 服务商</label><select id="provider"></select>
+<p id="provider-hint" class="hint"></p><p><a id="provider-docs" target="_blank" rel="noreferrer">查看服务商 API 文档 ↗</a></p>
+<label for="base-url">接口地址 · Base URL</label><input id="base-url" type="url" required spellcheck="false" placeholder="https://api.example.com/v1" autocomplete="off">
+<p class="hint">按账户地域填写；不需要在地址后添加 /chat/completions。地址变化时需重新输入密钥。</p>
+<label for="model">模型 ID</label><input id="model" required spellcheck="false" placeholder="从服务商控制台复制模型 ID" autocomplete="off">
+<label for="api-key">API Key</label><input id="api-key" type="password" spellcheck="false" autocomplete="off" placeholder="粘贴你自己的 API Key">
+<p id="key-state" class="hint">密钥仅保存在此浏览器的扩展私有存储，不上传伴读服务器，不参与浏览器同步。</p>
+<details><summary>接口兼容选项</summary><label class="check"><input id="stream" type="checkbox" checked> 流式显示译文（OpenAI 兼容接口）</label><label class="check"><input id="json-mode" type="checkbox"> 发送 JSON 模式参数（仅在模型支持时开启）</label><p class="hint">遇到参数不兼容时，可关闭以上选项后重新测试。Claude 使用非流式 Messages 接口。</p></details>
+<label class="check consent"><input id="consent" type="checkbox" required> 我确认：密钥和待翻译文字会直接发送至上述 API 地址；测试也会调用 API，费用由我的账户承担。</label>
+<button id="save" class="primary" type="submit">测试连接并保存启用</button>
+<p id="result" role="status" aria-live="polite"></p>
+</form>
+<button id="remove" class="text-button" type="button">删除已保存的 API 配置与密钥</button>
+<p>测试成功后回到英文网页即可使用；已打开的旧版页面请刷新。其他网站先在伴读弹窗中开启双语。</p>
+<p><a href="welcome.html">使用说明与试读 →</a> · <a href="https://bandume.com/privacy.html" target="_blank" rel="noreferrer">隐私政策</a> · <a href="https://github.com/polytradingwin/bandu" target="_blank" rel="noreferrer">开源代码</a></p>
+</main><script src="providers.js"></script><script src="api-setup.js"></script></body></html>
