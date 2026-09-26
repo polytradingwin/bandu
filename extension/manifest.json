@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "伴读 · 网页双语对照",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "免费、开源的网页双语阅读扩展。保留英文与分段，支持自备 OpenAI、Claude、Gemini、DeepSeek、千问等 API；API 费用由服务商收取。",
   "minimum_chrome_version": "138",
   "icons": {
@@ -53,5 +53,6 @@
     "matches": [
       "https://engbetter.com/*"
     ]
-  }
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqQM+8d2c+a+6AjinSCSxUtJEfRTEYd4QW2nUwHMXB74eINDUtOoj4wP6UxiudzIXM1mUPRYJxCbJ8yxvvj/iB1ZEUiNOVdYyrpLH7UAPIt1qbJq1m2B0A5r3ofmKKR0M6NjHFARUVnjY1ljUBHTqnFiNX0BfySfDmwNXDGcIZIwl8oS5vsBag20ykqiDRc4W2ebzAVdKzL8faryIrhuYffGRHqZZ/zQFszVL5yKhEEoYUCzKSrB5s0tnIMI/ODF0BxxLC+o3SaK5fEI+gXwDiYxg8hpVtcBAcViXrZzZlm7nIQmIawnECQXzCtmn9MwoP3WZBY0c2jmZpwAkuy0TNQIDAQAB"
 }

@@ -13,7 +13,7 @@
 
 ## 安装
 
-Chrome 应用商店：[伴读](https://chromewebstore.google.com/detail/ojkjhponlgoeagionaepmkjnkifnoiho)。商店版本由审核和发布进度决定；免费自备 API 版为 **1.0.0**。如果商店仍显示旧会员版，请从 GitHub Releases 安装 1.0.0。
+Chrome 应用商店：[伴读](https://chromewebstore.google.com/detail/ojkjhponlgoeagionaepmkjnkifnoiho)。商店版本由审核和发布进度决定；免费自备 API 版为 **1.0.0**。如果商店仍显示旧会员版，请从 GitHub Releases 安装最新版。GitHub 手动安装版 1.0.1 固定扩展 ID，支持在不同电脑上连接 EngBetter。
 
 手动安装（Chrome / Edge，Windows / macOS）：
 
@@ -24,6 +24,17 @@ Chrome 应用商店：[伴读](https://chromewebstore.google.com/detail/ojkjhpon
 5. 回到 X 刷新网页；普通网站点击伴读图标，开启双语并授权当前网站。
 
 更新本地文件后，在扩展管理页点击重新加载，再刷新网页。不要删除已加载的文件夹。
+
+## 收藏到自己的 EngBetter
+
+1. 点击伴读图标，再点“连接到 EngBetter”。
+2. 登录你自己的 EngBetter 账号，点击“允许连接”。
+3. 在英文网页选中一句英文，点击“收藏到 EngBetter［我记的日常］”。
+4. 显示“已收藏”后，打开 EngBetter 的“我记的日常”，可选择“只看收藏文”并开始练习。
+
+API Key 用于网页翻译；EngBetter 连接用于确定收藏归属，二者独立。每个人的句子只保存在自己的 EngBetter 账号下。收藏本身先保存句子，进入练习时再准备译文与音频，适用 EngBetter 自身的额度。
+
+GitHub 手动版的公开 `manifest.key` 仅用于固定扩展 ID，不是 API Key 或私钥。不要同时安装同 ID 的商店版和手动版；选择一种安装方式即可。
 
 ## 支持的 API
 
